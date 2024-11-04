@@ -183,7 +183,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'localhost',
-    'https://rishitabura2-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.
+    'https://rishitabura2-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.'
     'cognitiveclass.ai'
 ]
 
