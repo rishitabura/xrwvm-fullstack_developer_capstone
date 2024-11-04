@@ -13,7 +13,7 @@ class CarMake(models.Model):
         return self.name
 
 
-# car model 
+# car model
 class CarModel(models.Model):
     # Many-to-One relationship
     car_make = models.ForeignKey(CarMake, on_delete=models.CASCADE)
@@ -28,8 +28,7 @@ class CarModel(models.Model):
     type = models.CharField(max_length=10, choices=CAR_TYPES, default="SUV")
     year = models.IntegerField(
         default=2023,
-        validators=[MaxValueValidator(2023), MinValueValidator(2000)],
-    )
+        validators=[MaxValueValidator(2023), MinValueValidator(2000)],)
 
 
     # Other fields as needed
